@@ -27,11 +27,11 @@
 <div class="container py-5">
 
     <div class="card shadow border-0">
-        @if($article->image)
-            <img src="{{ asset('storage/' . $article->image) }}"
-                 class="card-img-top"
-                 style="max-height: 450px; object-fit: cover;">
-        @endif
+       @if($article->image)
+    <img src="{{ asset('storage/' . $article->image) }}"
+         class="card-img-top"
+         style="max-height: 450px; object-fit: cover;">
+@endif
 
         <div class="card-body p-5">
             <span class="badge bg-primary">{{ $article->category->name }}</span>
